@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+data/processed/
+models/*.pt
+models/*.onnx
+models/*.xgb.pkl
+models/*.png
+.DS_Store
+.env
+*.log

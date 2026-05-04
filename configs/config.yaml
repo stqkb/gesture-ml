@@ -1,25 +1,25 @@
 data:
-  raw_path: "data/raw"
-  processed_path: "data/processed"
+  raw_path: data/raw
+  processed_path: data/processed
   test_size: 0.2
   val_size: 0.1
   random_state: 42
-
 model:
-  name: "mlp"
-  input_dim: 63        # 21 landmarks * 3 (x, y, z)
-  num_classes: 10      # digits 0-9
-  hidden_dims: [128, 64]
+  name: mlp
+  input_dim: 63
+  num_classes: 10
+  hidden_dims:
+  - 128
+  - 64
   dropout: 0.3
-
 train:
   epochs: 50
   batch_size: 32
   lr: 0.001
   weight_decay: 0.0001
-  device: "auto"       # auto / cpu / cuda
+  device: auto
   seed: 42
-
+  patience: 10
 output:
-  model_path: "models/best_model.pt"
-  log_interval: 10     # print every N batches
+  model_path: models/best_model.pt
+  log_interval: 10

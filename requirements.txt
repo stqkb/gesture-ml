@@ -6,7 +6,7 @@ torchvision>=0.15
 matplotlib>=3.7
 pyyaml>=6.0
 tqdm>=4.65
-mediapipe>=0.10
+mediapipe==0.10.14
 opencv-python>=4.8
 fastapi>=0.100
 uvicorn>=0.23
